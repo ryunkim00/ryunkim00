@@ -1,0 +1,729 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+	color: white;
+}
+
+h1, h2, h3, p {
+	margin: 10px 0;
+}
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.half {
+	width: 50%;
+	height: 100%;
+}
+
+.half-vertical {
+	height: 50%;
+}
+
+.quarter {
+	width: 25%;
+	height: 100%;
+}
+
+.quarter-vertical {
+	height: 25%;
+}
+
+.two-fifths-vertical {
+	height: 40%;
+}
+
+.three-quarters {
+	width: 75%;
+	height: 100%;
+}
+
+.three-quarters-vertical {
+	height: 75%;
+}
+
+.three-fifths-vertical {
+	height: 60%;
+}
+
+.section {
+	width: 90%;
+	height: 92vh;
+	padding: 8vh 5% 0 5%;
+	background-color: #A8D0E6;
+}
+
+.padding {
+	width: 92%;
+	padding: 0 4%;
+}
+
+.margin {
+	width: 92%;
+	margin: 0 4%;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.shadow {
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.separator {
+	width: 20%;
+	height: 5px;
+	margin-bottom: 20px;
+	background-color: white;
+}
+
+/*******************************************************************/
+
+nav {
+	width: 96%;
+	height: 9vh;
+	padding: 0 2%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	background-color: #374785;
+}
+
+nav a {
+	height: 100%;
+	text-decoration: none;
+	color: white;
+}
+
+nav a > span {
+	height: 100%;
+	padding: 0 12px;
+}
+
+nav a > span:hover {
+	background-color: #24305E;
+}
+
+nav #logo {
+	position: absolute;
+	left: 2%;
+}
+
+nav #logo > span {
+	font-size: 2.5rem;
+	font-family: Bebas Neue;
+}
+
+nav #logo > span {
+	margin: 0 4px;
+}
+
+nav #logo > span:hover {
+	background-color: transparent;
+}
+
+
+#home-text {
+	font-family: Bebas Neue;
+}
+
+#home-text h1, #home-text p {
+	width: 100%;
+	margin: 0;
+}
+
+#home-text h1 {
+	font-size: 6rem;
+}
+
+#home-text p {
+	font-size: 2rem;
+}
+
+#home-mascot img {
+	width: 50%;
+	-webkit-transition: width 0.5s;
+	-moz-transition: width 0.5s;
+	transition: width 0.5s;
+}
+
+#home-mascot img:hover {
+	width: 52%;
+}
+
+/*******************************************************************/
+
+#about-profile {
+	background-color: #F8E9A1;
+}
+
+#about-profile div {
+	text-align: center;
+}
+
+#about-profile img {
+	width: 60%;
+	border: 5px solid white;
+	border-radius: 20%;
+}
+
+#about-profile h1 {
+	margin-top: 10px;
+	font-size: 3.5rem;
+	font-family: Bebas Neue;
+}
+
+#about-education {
+	background-color: #E8A87C;
+}
+
+#about-education div {
+	width: 90%;
+}
+
+#about-education .separator {
+	width: 20%;
+}
+
+#about-education div p {
+	font-size: 0.9rem;
+}
+
+#about-education div p a {
+	color: white;
+}
+
+#about-education div p span:hover {
+	background-color: rgba(248,233,161,0.5);
+}
+
+#about-education-img {
+	background-image: url( 'assets/imgs/E5.jpg' );
+	background-position: center;
+	background-size: cover;
+}
+
+/*******************************************************************/
+
+#experience {
+	width: 100%;
+	height: 92vh;
+	padding: 8vh 0 0 0;
+}
+
+#experience-first-company, #experience-second-company {
+	text-align: center;
+}
+
+#experience > div > .three-fifths-vertical {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#experience-first {
+	background-image: url( 'assets/imgs/Work_Background_1.png' );
+	background-position: center;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.3);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+#experience-second {
+	background-image: url( 'assets/imgs/Work_Background_2.png' );
+	background-position: center;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.4);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+#experience-first:hover, #experience-second:hover {
+	padding: 0 10%;
+	background-color: #243B55;
+}
+
+#experience-first > div, #experience-second > div {
+	font-size: 90%; /*Rework this*/
+}
+
+#experience h1 {
+	font-size: 2em;
+	font-family: Bebas Neue;
+}
+
+#experience-first-company > div, #experience-second-company > div {
+	width: 100%;
+	height: 100%;
+}
+
+#experience-first-company img {
+	width: 200px;
+	transition: width 0.4s;
+}
+
+#experience-second-company img {
+	width: 90px;
+	-webkit-transition: width 0.4s;
+	-moz-transition: width 0.4s;
+	transition: width 0.4s;
+}
+
+#experience-first-company img:hover {
+	width: 220px;
+}
+
+#experience-second-company img:hover {
+	width: 100px;
+}
+
+#experience a {
+	padding: 5px 10px;
+	border: 2px solid white;
+	text-decoration: none;
+	font-family: Bebas Neue;
+	color: white;
+}
+
+#experience a:hover {
+	color: #374785;
+	border-color: #374785;
+}
+
+/*******************************************************************/
+
+.red-gradient {
+	background: #E35D5B;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #E35D5B, #E53935);
+	background: -moz-linear-gradient(to right, #E35D5B, #E53935);
+	background: linear-gradient(to right, #E35D5B, #E53935);
+}
+
+.dark-blue-gradient {
+	background: #243B55;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #243B55, #141E30);
+	background: -moz-linear-gradient(to right, #243B55, #141E30);
+	background: linear-gradient(to right, #243B55, #141E30);
+}
+
+.blue-gradient {
+	background: #4B6CB7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4B6CB7, #3F2B96);
+	background: -moz-linear-gradient(to right, #4B6CB7, #3F2B96);
+	background: linear-gradient(to right, #4B6CB7, #3F2B96);
+}
+
+#projects-first {
+	background-color: #E35D5B;
+}
+
+#projects-second {
+	background-color: #243B55;
+}
+
+#projects-third {
+	background-color: #4B6CB7;
+}
+
+.projects-tab {
+	width: 90%;
+	margin-left: 10%;
+	height: calc( 100% / 3);
+	border-radius: 5% 0 0 5%;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.projects-tab:hover {
+	width: 100%;
+	margin-left: 0;
+}
+
+.projects-tab>span {
+	height: 100%;
+	border-radius: 5% 0 0 5%;
+}
+
+#projects-first img, #projects-second img, #projects-third img {
+	width: 70%;
+	margin: 0 15%;
+}
+
+#projects-display {
+	height: 100%;
+	border-left: 2px solid rgba(255,255,255,0.4);
+}
+
+#projects-display > div {
+	width: 86%;
+	height: 71vh;
+	margin: 10vh 7%;
+}
+
+#projects-display h1 {
+	height: 10%;
+	margin: 0 0 2% 0;
+	font-size: 2.6rem;
+	font-family: Bebas Neue;
+}
+
+#projects-display p {
+	margin: 0;
+}
+
+#projects-display img.circle {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 4px solid white;
+	object-fit: cover;
+}
+
+/*******************************************************************/	
+
+#interests-content {
+	width: 60%;
+	height: 100%;
+	text-align: center;
+	background-color: #243B55;
+}
+
+#interests-content > div {
+	width: 90%;
+	height: 90%;
+	padding: 5%;
+}
+
+#interests-content h1 {
+	font-family: Bebas Neue;
+}
+
+#iframe-container iframe {
+	width: 80%;
+	height: 90%;
+	margin: 5% 10%;
+}
+
+#interests-gallery {
+	width: 40%;
+	height: 100%;
+}
+
+#interests-gallery > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*******************************************************************/
+
+.bubble-s {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: rgba(36,48,94,0.6);
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+
+.bubble-m {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: rgba(36,48,94,0.8);
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+#contact {
+	width: 100%;
+	padding: 0;
+}
+
+#contact-container {
+	width: 100%;
+	height: 100%;
+}
+
+#resume-container {
+	width: 100%;
+	height: 60%;
+	-webkit-justify-content: space-evenly;
+	-moz-justify-content: space-evenly;
+	justify-content: space-evenly;
+}
+
+#resume-container > .flex-center {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: rgba(36,48,94,1);
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+#resume-container > .flex-center:hover {
+	width: 220px;
+	height: 220px;
+	border: 6px solid rgba(255,255,255,0.4);
+}
+
+#resume-container h1, #resume-container a {
+	margin: 12px 0;
+}
+
+#resume-container h1 {
+	height: 20%;
+	font-size: 2em;
+	font-family: Bebas Neue;
+}
+
+#resume-container a {
+	height: 20%;
+	padding: 5px 10px;
+	border: 2px solid white;
+	text-decoration: none;
+	font-family: Bebas Neue;
+	font-size: 1.2em;
+	color: white;
+}
+
+#resume-container a:hover {
+	color: #374785;
+	border-color: #374785;
+}
+
+#footer {
+	width: 60%;
+	height: 40%;
+	padding: 0 20%;
+	background-color: #24305E;
+	position: bottom;
+}
+
+#footer a {
+	padding: 0 15px;
+	text-decoration: none;
+	font-family: Bebas Neue;
+	color: white;
+}
+
+#footer a:hover {
+	color: #374785;
+}
+#footer div {
+	text-align: center;
+}
+
+#footer p {
+	font-size: 1em;
+}
+
+/*******************************************************************
+ *******************************************************************/
+
+@media screen and ( max-width: 600px ) {
+	nav > a.collapse {
+		display: none;
+	}
+
+	/*******************************************************************/
+
+	#about {
+		width: 100%;
+		height: 92vh;
+		padding: 8vh 0 0 0;
+	}
+
+	#about-education {
+		overflow: auto;
+	}
+
+	#about-education .collapse {
+		display: none;
+	}
+
+	/*******************************************************************/
+
+	#experience .collapse {
+		display: none;
+	}
+
+	#experience-first > div, #experience-second > div {
+		font-size: 85%;
+	}
+
+	#experience-first > .flex-center, #experience-second > .flex-center {
+		height: 70%;
+	}
+
+	#experience-first-company, #experience-second-company {
+		height: 30%;
+	}
+
+	/*******************************************************************/
+
+	#projects {
+		width: 100%;
+		height: 92vh;
+		padding: 8vh 0 0 0;
+	}
+
+	.projects-tab {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	#projects .collapse {
+		display: none;
+	}
+
+	#projects-display h1 {
+		font-size: 2rem;
+	}
+
+	#projects-display img.circle {
+		width: 100px;
+		height: 100px;
+	}
+
+	/*******************************************************************/
+
+	#interests {
+		width: 100%;
+		height: 92vh;
+		padding: 8vh 0 0 0;
+	}
+
+	#interests .collapse {
+		display: none;
+	}
+}
+
+@media screen and ( max-width: 400px ) {	
+	nav > a.collapse-sm {
+		display: none;
+	}
+
+	#home-text h1 {
+		font-size: 4rem;
+	}
+
+	#home-text p {
+		font-size: 1.2rem;
+	}
+
+	#home-mascot img {
+		width: 60%;
+	}
+
+	#home-mascot img:hover {
+		width: 80%;
+	}
+
+	/*******************************************************************/
+
+	#about-profile h1 {
+		font-size: 2.5rem;
+	}
+
+	#about-education {
+		width: 90%;
+		height: 60%;
+		padding: 0 5%;
+	}
+
+	#about-education h2 {
+		font-size: 1.2rem;
+	}
+
+	#about-education-img {
+		height: 40%;
+	}
+
+	/*******************************************************************/
+
+	#experience {
+		flex-wrap: wrap;
+	}
+
+	#experience .collapse-sm {
+		display: none;
+	}
+
+	#experience-first, #experience-second {
+		width: 90%;
+		height: 50%;
+		padding: 0 5%;
+	}
+
+	#experience-first:hover, #experience-second:hover {
+		padding: 0 5%;
+	}
+
+	/*******************************************************************/
+
+	#projects .collapse-sm {
+		display: none;
+	}
+
+	#projects #projects-display > div h1#title1 {
+		font-size: 1.2rem;
+	}
+
+	/*******************************************************************/
+
+	#interests {
+		flex-wrap: wrap;
+	}
+
+	#interests-content {
+		width: 100%;
+		height: 50%;
+	}
+
+	#interests-content #iframe {
+		width: 20%;
+	}
+
+	#interests-gallery {
+		width: 100%;
+		height: 50%;
+	}
+
+	#interests-content .two-fifths-vertical {
+		height: 60%;
+	}
+
+	#interests-content #iframe-container {
+		height: 40%;
+	}
+
+	/*******************************************************************/
+
+	#contact .bubble-s, #contact .bubble-m {
+		display: none;
+	}
+}
