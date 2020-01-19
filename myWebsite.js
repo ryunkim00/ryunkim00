@@ -3,18 +3,19 @@ const projectsSecond = document.querySelector( '#projects-second' );
 const projectsThird = document.querySelector( '#projects-third' );
 const projectsDisplay = document.querySelector( '#projects-display' );
 
+const firstProjectText = 'Developed a dynamic, RESTful web application for users to review campsites with <em>user authentication</em> / <em>authorization</em> and <em>comment features</em> using <strong>Bootstrap</strong>, <strong>Node.js</strong>, <strong>Express</strong>, <strong>MongoDB + Atlas</strong>, <strong>Git</strong>, a <strong>cloud-based IDE</strong> called Goorm, and <strong>Heroku</strong> for deployment';
 const secondProjectText = 'Developed a meeting minutes taker that listens to and summarizes a meeting using a <strong>Google Home Mini</strong>, <strong>VoiceFlow API</strong> for speech-to-text, <strong>Python</strong> for summarizing, <strong>Firebase API</strong> for backend, and <strong>React</strong> for UI on a four-person team';
 const thirdProjectText = 'Developed a Lego Mindstorms EV3 robot that interprets music on paper for the hearing impaired using RobotC, <strong>C++</strong>, and <strong>robotics hardware</strong>';
 
 const firstProjectHTML = `
 	<div>
-		<h1 class="shadow">Project In Progress</h1>
+		<h1 class="shadow">YelpCamp</h1>
 		<div style="height:8%;">
 			<div class="separator collapse"></div>
 		</div>
-		<p style="height:20%;">Currently developing a web application for reviewing campsites using <strong>MongoDB</strong>, <strong>Express</strong>, and <strong>Node.js</strong></p>
-		<div style="height:60%;text-align:center;">
-			<img src="assets/imgs/Work_In_Progress.png" style="height:80%;">
+		<p style="height:30%;">${firstProjectText}</p>
+		<div style="height:50%;text-align:center;overflow:hidden;">
+			<a href="https://still-citadel-75028.herokuapp.com/" target="_blank" title="View application!"><img src="assets/imgs/YelpCamp_Webpage.png" style="height:100%;"></a>
 		</div>
 	</div>
 `;

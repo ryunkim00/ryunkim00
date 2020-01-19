@@ -392,7 +392,7 @@ nav #logo > span:hover {
 #projects-display img.circle {
 	width: 200px;
 	height: 200px;
-	border-radius: 50%;
+	border-radius: 5%;
 	border: 4px solid white;
 	object-fit: cover;
 }
