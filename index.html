@@ -1,178 +1,209 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Ryun Kim</title>
-  <link rel="stylesheet" type="text/css" href="myWebsite.css">
-  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:400,700&display=swap" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="HandheldFriendly" content="true">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div id="home" class="section flex-center">
-  <nav>
-    <a id="logo" href=""><span class="flex-center">RK</span></a>
-    <a class="collapse" id="home-link" href="#home"><span class="flex-center">Home</span></a>
-    <a class="collapse" href="#about"><span class="flex-center">About</span></span></a>
-    <a class="collapse-sm" href="#experience"><span class="flex-center">Experience</span></a>
-    <a class="collapse-sm" href="#projects"><span class="flex-center">Projects</span></a>
-    <a class="collapse" href="#interests"><span class="flex-center">Interests</span></a>
-    <a class="collapse-sm" href="#contact"><span class="flex-center">Contact</span></a>
-  </nav>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
-  <div class="half flex-center">
-    <div id="home-text">
-      <h1>Hi, I'm Ryun.</h1>
-      <div class="separator"></div>
-      <br>
-      <p>Welcome to my website!</p>
-    </div>
-  </div>
-  <div id="home-mascot" class="half flex-center">
-    <img src="assets/imgs/Sailboat.svg" title="Courtesy of Freepik">
-  </div>
-</div>
-
-<div id="about" class="section flex-center">
-  <div id="about-profile" class="half flex-center">
-    <div class="margin">
-      <img src="assets/imgs/Profile.jpg" title="Nice to meet you!">
-      <h1 class="shadow">Ryun Kim</h1>
-      <p class="shadow">2A Mechatronics Engineering</p>
-    </div>
-  </div>
-  <div class="half">
-    <div id="about-education" class="half-vertical flex-center">
-      <div class="margin">
-        <h2>First, some introductions!</h2>
-        <div class="separator"></div>
-        <p>Hi there! My name is <span>Ryun Kim</span> and I'm currently a second-year <a href="https://uwaterloo.ca/future-students/programs/mechatronics-engineering" target="_blank" title="Click to learn more about my program">mechatronics engineering</a> undergrad at the <span>Univeristy of Waterloo</span>.</p>
-        <p class="collapse">Whether you are a prospective employer or someone who's just interested, this is a great place to get to know more about me.</p>
-      </div>
-    </div>
-    <div id="about-education-img" class="half-vertical flex-center"></div>
-  </div>
-</div>
-
-<div id="experience" class="section flex-center">
-  <div id="experience-first" class="half padding">
-    <div class="three-fifths-vertical flex-center">
-      <div>
-        <h1 class="shadow">QA & Software Tester</h1>
-        <div class="separator"></div>
-        <h3>Tools Used</h3>
-        <p>HTML • CSS • JS Frameworks (Stencil, Jest, Puppeteer) • Version Control software</p>
-        <ul class="collapse-sm">
-          <li>Developed 50+ unit and end-to-end tests using JS frameworks to debug custom web components</li>
-          <li class="collapse">Discovered novel bugs by completing a review cycle for each component and used version control software called Perforce to submit test files</li>
-        </ul>
-      </div>
-    </div>
-    <div id="experience-first-company" class="two-fifths-vertical flex-center">
-      <div>
-        <div class="half-vertical flex-center collapse">
-          <img src="assets/imgs/Maplesoft_Logo.png">
+    <title>Ryun Kim</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <a class="navbar-brand pl-md-3 pr-2" href="#">김륜</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#experience">EXPERIENCE</a>
+            <a class="nav-item nav-link" href="#projects">PROJECTS</a>
+            <a class="nav-item nav-link" href="#interests">INTERESTS</a>
+            <a class="nav-item nav-link" href="#contact">CONTACT</a>
+          </div>
         </div>
-        <div class="half-vertical flex-center">
-          <a href="https://www.maplesoft.com/" target="_blank">Visit Website</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="experience-second" class="half padding">
-    <div class="three-fifths-vertical flex-center">
-      <div>
-        <h1 class="shadow">UI Designer & Controls Programming Assistant</h1>
-        <div class="separator"></div>
-        <h3>Tools Used</h3>
-        <p>AutoCAD • Microsoft Visio • SketchUp</p>
-        <ul class="collapse-sm">
-          <li>Produced project-specific UI for HVAC operators from engineered shop drawings, programming datasets, and AutoCAD floor plans</li>
-          <li class="collapse">Programmed direct digital control systems based on custom sequences of operation using plug-in stencils on Visio</li>
-        </ul>
-      </div>
-    </div>
-    <div id="experience-second-company" class="two-fifths-vertical flex-center">
-      <div>
-        <div class="half-vertical flex-center collapse">
-          <img src="assets/imgs/HTS_Logo.png">
-        </div>
-        <div class="half-vertical flex-center">
-          <a href="https://www.hts.com/" target="_blank">Visit Website</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    </nav>
 
-<div id="projects" class="section flex-center">
-  <div class="quarter">
-    <div id="projects-first" class="projects-tab">
-      <span class="flex-center"><img src="assets/imgs/YelpCamp.png" title="Courtesy of Free Logo Design"></span>
-    </div>
-    <div id="projects-second" class="projects-tab">
-      <span class="flex-center"><img src="assets/imgs/Meeting_Minutes.png" title="Courtesy of Free Logo Design"></span>
-    </div>
-    <div id="projects-third" class="projects-tab">
-      <span class="flex-center"><img src="assets/imgs/DeafSTAR.png" title="Courtesy of Free Logo Design"></span>
-    </div>
-  </div>
-  <div id="projects-display" class="three-quarters red-gradient">
-    <div class="flex-center">
-      <h2>👈 Click on one of the left tabs to find out more!</h2>
-    </div>
-  </div>
-</div>
+    <section id="home" class="container py-5">
+        <div class="row justify-content-center align-items-center pb-5">
+            <div class="col-md-8 px-3 px-md-0 pb-5 pb-md-0">
+                <img class="img-fluid" src="assets/imgs/watercolour.png" alt="">
+            </div>
+            <div class="col-md-4 text-center px-3 px-md-0 typewriter">
+                <h2>DEDICATION.</h2>
+                <h2>CREATIVITY.</h2>
+                <h2>EXCELLENCE.</h2>
+                <hr>
+                <p>These are my promises as an employee.</p>
+                <a class="btn btn-outline-info" href="assets/resume.pdf" target="_blank">VIEW RESUME</a>
+            </div>
+        </div>
+        <div class="row justify-content-around align-items-center">
+            <div class="col-md-6 order-2 order-md-1 px-3 px-md-0">
+                <h5>Hi, I'm Ryun. Nice to meet you!</h5>
+                <p>I'm currently a second-year undergraduate student studying mechatronics engineering at the University of Waterloo. I have a passion for web development and singing. If you are a prospective employer, this is a great place to get to know more about me.</p>
+            </div>
+            <div class="col-md-4 order-1 order-md-2 px-3 px-md-0 pb-5 pb-md-0">
+                <img class="img-fluid" src="assets/imgs/profile.png" alt="">
+            </div>
+        </div>
+    </section>
 
-<div id="interests" class="section flex-center">
-  <div id="interests-content">
-    <div>
-      <div class="two-fifths-vertical">
-        <h1 class="shadow">A Cappella Singing</h1>
-        <hr>
-        <p>Coming from an arts background, I've been continuing my passion for singing through the a cappella clubs on campus<span class="collapse"> including three terms in <i>The Water Boys</i>, one as a co-musical director, and one in <i>The Unaccompanied Minors</i> (UM). Here is a video of my most recent performance of "Visions of Gideon" by Sufjan Stevens with the UM.</span></p>
-      </div>
-      <div id="iframe-container" class="three-fifths-vertical flex-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Zk4YfTWNfb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-  <div id="interests-gallery">
-    <img name="slide" src="https://i.imgur.com/wlhuJ5L.jpg">
-  </div>
-</div>
+    <section id="experience" class="container-fluid py-5">
+        <div class="row header justify-content-center align-items-center pb-5">
+            <div class="col jumbotron d-flex justify-content-center justify-content-md-start align-items-center rounded-0">
+                <h2 class="p-0 pl-md-2">EXPERIENCE</h2>
+            </div>
+        </div>
+        <div class="row justify-content-around text-center px-2">
+            <div class="col-md-4 px-4 pb-5 pb-md-0">
+                <i class="fas fa-briefcase d-inline d-md-none"></i>
+                <h5 class="pt-3 pt-md-0">FULL STACK DEVELOPER for SS&C Technologies</h5>
+                <p>May 2020 – Present</p>
+                <hr>
+                <p>This is my current position. More details coming soon!</p>
+                <a href="https://www.ssctech.com/" target="_blank"><img class="d-none d-md-inline" src="assets/imgs/SSC_logo.png" alt=""></a>
+            </div>
+            <div class="col-md-4 px-4 pb-5 pb-md-0">
+                <i class="fas fa-briefcase d-inline d-md-none"></i>
+                <h5 class="pt-3 pt-md-0">QA & SOFTWARE TESTER for Maplesoft</h5>
+                <p>Sept. – Dec. 2019</p>
+                <hr>
+                <p>Worked in multiple JS testing frameworks including Stencil, Jest, and Puppeteer to debug over 30 custom web components to be used in the CAD toolbox feature of the company's modelling and simulation software called <em>MapleSim</em></p>
+                <a href="https://www.maplesoft.com/" target="_blank"><img class="d-none d-md-inline" src="assets/imgs/Maplesoft_logo.png" alt=""></a>
+            </div>
+            <div class="col-md-4 px-4 pb-0">
+                <i class="fas fa-briefcase d-inline d-md-none"></i>
+                <h5 class="pt-3 pt-md-0">UI DESIGNER & CONTROLS PROGRAMMING ASSISTANT for HTS Engineering</h5>
+                <p>Jan. – Apr. 2019</p>
+                <hr>
+                <p>Produced project-specific UI for HVAC operators from engineered shop drawings, programming datasets, and AutoCAD floor plans</p>
+                <a href="https://www.hts.com/" target="_blank"><img class="d-none d-md-inline" src="assets/imgs/HTS_Engineering_logo.png" alt=""></a>
+            </div>
+        </div>
+    </section>
 
-<div id="contact" class="section flex-center">
-  <div id="contact-container">
-    <div id="resume-container" class="flex-center">
-      <div class="bubble-s"></div>
-      <div class="bubble-m"></div>
-      <div class="flex-center">
-        <div>
-          <h1>Let's connect!</h1>
-          <a href="assets/Ryun_Kim_Resume.pdf" target="_blank">View Resume</a>
+    <section id="projects" class="container-fluid py-5">
+      <div class="row header justify-content-center align-items-center pb-5">
+          <div class="col jumbotron d-flex justify-content-center justify-content-md-start align-items-center rounded-0">
+              <h2 class="p-0 pl-md-2">PROJECTS</h2>
+          </div>
+      </div>
+      <div class="row justify-content-around px-2 pb-5">
+        <div class="col-md-5 pb-5 pb-md-0">
+          <div class="card">
+              <img src="assets/imgs/YelpCamp_landing_page.png" alt="" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">YelpCamp | <small>Individual</small></h5>
+                  <p class="card-text">Developed a dynamic, RESTful web application for users to review campsites with user authentication/authorization and comment features using Bootstrap, Node.js, Express, MongoDB + Atlas, Git, a cloud-based IDE called Goorm, and Heroku for deployment</p>
+                  <a href="https://still-citadel-75028.herokuapp.com/" target="_blank" class="btn btn-outline-info btn-sm">Launch App!</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-5 pb-5 pb-md-0">
+          <div class="card">
+              <img src="assets/imgs/Google_Home_Mini.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Meeting Minutes | <small>Hack the North 2019</small></h5>
+                  <p class="card-text">Developed a meeting minutes taker that listens to and summarizes a meeting using a Google Home Mini, VoiceFlow API for speech-to-text, Python for summarizing, Firebase API for backend, and React for UI on a four-person team</p>
+              </div>
+          </div>
         </div>
       </div>
-      <div class="bubble-m"></div>
-      <div class="bubble-s"></div>
-    </div>
-    <footer id="footer" class="flex-center">
-      <div>
-        <div class="flex-center">
-          <a href="mailto:ryun.kim@uwaterloo.ca"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/in/ryun-kim/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-          <a href="https://github.com/ryunkim00" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-        </div>
-        <hr>
-        <p>Made with ❤️ by Ryun Kim</p>
+  </section>
+
+  <section id="interests" class="container-fluid py-5">
+    <div class="row header justify-content-center align-items-center pb-5">
+      <div class="col jumbotron d-flex justify-content-center justify-content-md-start align-items-center rounded-0">
+          <h2 class="p-0 pl-md-2">INTERESTS</h2>
       </div>
-    </footer>
-  </div>
-</div>
+    </div>
+    <div class="row justify-content-center align-items-center px-2 pb-5">
+      <div class="col-md-8">
+        <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner rounded-lg">
+            <div class="carousel-item active" data-interval="10000">
+              <img src="assets/imgs/a_cappella.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>A CAPPELLA</h5>
+                <p>Performing in UWACC's end-of-term concert</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <img src="assets/imgs/Splash.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>SHOW CHOIR</h5>
+                <p>The final pose in Splash's award-winning 2018 set</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/imgs/Cabaret.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>MUSICAL THEATRE</h5>
+                <p>A scene from ESA's senior musical production of <em>Cabaret</em></p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center px-2 pb-3">
+      <div class="col-md-7">
+        <p>I've been performing for as long as I can remember. Throughout high school, I've performed in show choir competitions and musical productions. Thanks to the thriving a cappella community at the University of Waterloo, I've been able to continue my love for performing through end-of-term concerts and collegiate a cappella competitions.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center pb-5">
+      <div class="col text-center">
+        <a href="https://www.youtube.com/playlist?list=PLWsjLSIRtKxcaIMJP5tblEvAqITYvWAAf" target="_blank" class="btn btn-outline-info">Watch Performances</a>
+      </div>
+    </div>
+  </section>
 
-<script type="text/javascript" src="myWebsite.js"></script>
+  <section id="contact" class="container-fluid bg-light py-5">
+    <div class="row justify-content-around align-items-center py-3">
+      <div class="col text-center">
+        <a href="mailto:ryun.kim@uwaterloo.ca" class="px-2"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/ryun-kim/" target="_blank" class="px-2"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ryunkim00" target="_blank" class="px-2"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="row justify-content-around align-items-center pt-4">
+      <div class="col text-center">
+        <p>Made with <i class="fas fa-heart"></i> by Ryun Kim</p>
+      </div>
+    </div>
+  </section>
 
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+          $(document).scroll(function() {
+            var $nav = $(".navbar");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+          });
+        });
+    </script>
+  </body>
 </html>

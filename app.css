@@ -1,0 +1,89 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+i:not(.fa-heart) {
+    color: #212529;
+    font-size: 1.3rem;
+    transition: color 300ms;
+}
+
+i:not(.fa-heart):not(.fa-briefcase):hover {
+    color: #17a2b8;
+}
+
+.navbar-brand {
+    font-family: "Nanum Brush Script", cursive;
+    font-size: 1.6rem;
+}
+
+.header {
+    height: 350px;
+}
+
+.typewriter p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 1px solid #17a2b8; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+.navbar.scrolled {
+    background-color: #f8f9fa;
+    transition: background-color 500ms;
+}
+
+#experience img {
+    height: 100px;
+    transition: height 500ms;
+}
+#experience img:hover {
+    height: 110px;
+}
+
+#experience .jumbotron {
+    background: url("assets/imgs/work_desk.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+#projects .jumbotron {
+    background: url("assets/imgs/lego.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+#interests .jumbotron {
+    background: url("assets/imgs/cassette.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #17a2b8; }
+}
+
+@media (max-width: 768px) {
+    #interests .jumbotron {
+        background: url("assets/imgs/cassette_cropped.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+}
